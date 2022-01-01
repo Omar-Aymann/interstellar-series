@@ -150,11 +150,16 @@ button
     }
     .brand
 {
-    font-size: 3em;
+    font-size: 2em;
 }
 .sub-brand
 {
-    font-size: 1.88em;
+    font-size: 1.1em;
 
+}
+.login-title
+{
+    font-size: 1.3em;
+    margin: 20px 0;
 }
 }
