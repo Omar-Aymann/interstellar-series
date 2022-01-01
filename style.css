@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+input:focus
+{
+    border: none;
+}
+.top-text
+{
+    margin: 20px 0;
+}
+.brand
+{
+    font-size: 3vw;
+    font-weight: bold;
+}
+.sub-brand
+{
+    font-size: 1.88vw;
+    font-weight: bold;
+
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.login-title
+{
+    font-size: 2.3vw;
+    margin: 20px 0;
+}
+.l-side
+{
+    width: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.l-side .login-form
+{
+    margin: 25% 0;
+    width: 100%;
+}
+.l-side .login-form form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.l-side .login-form form a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #3478FF;
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    margin: 5px 0;
+}
+.l-side .login-form form input
+{
+    font-size: 1.2em;
+    width: 70%;
+    padding: 5px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #707070;
+}
+button
+{
+    background-color: #3478FF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 1.15em;
+    margin: 10px 0;
+}
+.r-side
+{
+    background: url('albert.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+.r-side .txt-con
+{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 50px;
+    z-index: 2;
+}
+.r-side::after{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: block;
+    left: 0;
+    top: 0;
+    content: '';
+    opacity: 0.5;
+}
+.txt-con h4 {font-size: 2vw; line-height: 1.19em;}
+.txt-con h2 {font-size: 3vw; margin: 25px 0;}
+
+/*circles*/
+.circle
+{
+    width: 200px;
+    height: 200px;
+    content: '';
+    background-color: #FFCC9A;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    z-index: -1;
+}
+
+.circle:nth-of-type(2)
+{
+    top: initial;
+    left: initial;
+    bottom: -100px;
+    left: -5px;
+}
+@media screen and (max-width: 800px) {
+    .r-side
+    {
+        display: none;
+    }
+    .l-side
+    {
+        width: 100%;
+    }
+}
