@@ -139,6 +139,10 @@ button
     bottom: -100px;
     left: -5px;
 }
+.about
+{
+    font-size: 1.2em;
+}
 @media screen and (max-width: 800px) {
     .r-side
     {
