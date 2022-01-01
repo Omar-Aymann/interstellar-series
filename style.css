@@ -148,4 +148,13 @@ button
     {
         width: 100%;
     }
+    .brand
+{
+    font-size: 3em;
+}
+.sub-brand
+{
+    font-size: 1.88em;
+
+}
 }
